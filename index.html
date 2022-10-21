@@ -28,8 +28,9 @@
     <main class="main">
 
             <div class="jumbotron jumbotron-fluid">
-                <div class="container">
-                  <h1 class="display-4">This will display the City Name (image depicting weather in background?)</h1>
+                <div class="container" id = "current-weather-container">
+                  <h1 class="current-title display-4" id = "current-title"></h1>
+                  <img id="current-weather-icon" class="d-inline" src="" alt="">
                   <ul style="list-style-type: none" class="lead">
                     <li class="current-temperature" id="current-temperature"><i class="fas fa-thermometer-three-quarters"></i>  Temperature:</li>
                   
@@ -60,7 +61,7 @@
                             </form>
                         </div>
                         
-                        <div id="search-history-container" class="row m-0 search-history-container">  
+                        <div id="search-container" class="row m-0 search-container">  
                     </div>
                     </div>
 
@@ -73,31 +74,31 @@
                                 <p class="forecast-date" id="forecast-date-1">day 1</p>
                                 <img id="forecast-icon-1" src="" alt="">
                                 <p class="forecast-temp" id="forecast-temp-1"></p>
-                                <p class="forecast-status" id="forecast-status-1"></p>
+                                <p class="forecast-humid" id="forecast-humid-1"></p>
                             </div>
                             <div class="forecast-card bg-primary rounded">
                                 <p class="forecast-date" id="forecast-date-2">day 2</p>
                                 <img id="forecast-icon-2" src="" alt="">
                                 <p class="forecast-temp" id="forecast-temp-2"></p>
-                                <p class="forecast-status" id="forecast-status-2"></p>
+                                <p class="forecast-humid" id="forecast-humid-2"></p>
                             </div>
                             <div class="forecast-card bg-primary rounded">
                                 <p class="forecast-date" id="forecast-date-3">day 3</p>
                                 <img id="forecast-icon-3" src="" alt="">
                                 <p class="forecast-temp" id="forecast-temp-3"></p>
-                                <p class="forecast-status" id="forecast-status-3"></p>
+                                <p class="forecast-humid" id="forecast-humid-3"></p>
                             </div>
                             <div class="forecast-card bg-primary rounded">
                                 <p class="forecast-date" id="forecast-date-4">day 4</p>
                                 <img id="forecast-icon-4" src="" alt="">
                                 <p class="forecast-temp" id="forecast-temp-4"></p>
-                                <p class="forecast-status" id="forecast-status-4"></p>
+                                <p class="forecast-humid" id="forecast-humid-4"></p>
                             </div>
                             <div class="forecast-card bg-primary rounded">
                                 <p class="forecast-date" id="forecast-date-5">day 5</p>
                                 <img id="forecast-icon-5" src="" alt="">
                                 <p class="forecast-temp" id="forecast-temp-5"></p>
-                                <p class="forecast-status" id="forecast-status-5"></p>
+                                <p class="forecast-humid" id="forecast-humid-5"></p>
                             </div>
                         </div>
                     </div>
@@ -107,6 +108,8 @@
                    
 
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./assets/script.js"></script>
   </body>
 </html>
