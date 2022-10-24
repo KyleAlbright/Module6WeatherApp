@@ -65,7 +65,7 @@ var handleSubmit = function () {
         fiveDayLabel.text('5-Day Forecast:');
         var fiveDayForecast = $('#fiveDayForecast');
         fiveDayForecast.empty();
-        $('#searchCity')[0].reset();
+        $('#searchCity').trigger('reset')
         for (var i = 0; i < data.list.length; i+=8) {
             var html = ` 
             <div class="card" style="width: 11rem; background-color: rgb(0, 157, 255); margin-bottom: 1em;">
