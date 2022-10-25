@@ -15,47 +15,51 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Weather Dashboard</title>
   </head>
+  
   <body>
+    
     <!-- header -->
-    <header class="bg-dark">
+    <header class="bg-dark container-fluid">
       <h1 class="p-2 text-light text-center h1">Weather Dashboard</h1>
     </header>
+    
 <main>
+  <div class = "bg-image" style = "background-image: url('./assets/rain-effect-beach-background.jpg'); height: 100vh;">
     <!-- main -->
-    <div class="m-4 p-4">
+    <div class=" p-4 ">
       <div class="col-md-12">
         <div class="row">
           <!-- search section -->
           <div class="col-md-3">
             <!-- search form -->
             <h2>Search for a City:</h2>
-            <!-- <form class="form-inline" id="searchInput"> -->
+            
               <input
                 type="search"
                 class="form-control mb-3 ds-input"
                 id="searchCity"
                 placeholder="Enter city name..."
               />
-              <button onclick="handleSubmit()" class="btn btn-primary mb-3"><i class="fas fa-search"></i></button>
-            <!-- </form> -->
+              <button onclick="handleSearch()" class="btn btn-dark mb-3"><i class="fas fa-search"></i></button>
+           
 
             <!-- search history-->
-            <ul class="list-group" id="search-history"></ul>
+            <div class="row" id="search-history"></div>
           </div>
 
           <!-- results section -->
           <div class="col-md-9">
             <!-- city weather data -->
-            <div class="card mt-2">
+            <div class="card mt-2 bg-image" style = "background-image: url('./assets/banner-1557834_960_720.jpg') ">
               <div class="card-body">
                 <div class="d-flex flex-row">
-                  <h2
+                  <h2 style = "color:azure"
                     class="card-title align-self-center"
                     id="currentCity",
                   ></h2>
-                  <div id = "currentCityDate"></div>
+                  <div style = "color:azure" id = "currentCityDate"></div>
                 </div>
-                <h3 class="card-subtitle text-muted" id="currentCityTemp"><i class="fas fa-thermometer-three-quarters"></i>
+                <h3  class="card-subtitle text-muted" id="currentCityTemp"><i class="fas fa-thermometer-three-quarters"></i>
                   Temperature:
                 </h3>
                 <h3 class="card-subtitle mt-3 text-muted" id="currentCityHum"><i class="fas fa-tint"></i>
@@ -81,6 +85,7 @@
           </div>
         </div>
     </div>
+</div>
 </div>
           </main>
     <!-- javaScript links -->
