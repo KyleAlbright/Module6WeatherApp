@@ -35,3 +35,4 @@ When the user is presented with the app, they can input a city to search for wea
 
 https://kylealbright.github.io/Module6WeatherApp/
 
+![Screenshot (21)](https://user-images.githubusercontent.com/110487869/197851099-e27622c4-4e91-42cf-ab9e-bd44fb61770f.png)
